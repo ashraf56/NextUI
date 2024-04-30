@@ -5,7 +5,7 @@ import { Table, TableHeader, TableColumn, TableBody, TableRow, TableCell, Pagina
 export default function Retable({ users, columns }) {
     const [page, setPage] = useState(1);
 
-    const rowsPerPage = 7;
+    const rowsPerPage = 6;
 
     const pages = Math.ceil(users?.length / rowsPerPage);
 
@@ -43,7 +43,7 @@ export default function Retable({ users, columns }) {
             <TableBody items={items}>
         {(item) => (
           <TableRow key={item}>
-            {(columnKey) => <TableCell>{getKeyValue( item, columnKey)}</TableCell>}
+            {(columnKey) => <TableCell className='text-sm'>{getKeyValue( item, columnKey)}</TableCell>}
           </TableRow>
         )}
       </TableBody>
