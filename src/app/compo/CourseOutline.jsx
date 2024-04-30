@@ -37,7 +37,7 @@ const CourseOutline = () => {
     <Accordion itemClasses={itemClasses}>
       {products.map((content, i) => (
         <AccordionItem key={content.id} aria-label={`Accordion ${i + 1}`} title={`Section ${i + 1}: ${content.title}`} subtitle={`'3'/ 3 | 20 min`}>
-          <Link href={`/coursedetail/detail?cotent=${content.id}`}>{content.category}</Link>
+          <Link href={`/coursedetail`}>{content.category}</Link>
         </AccordionItem>
       ))}
     </Accordion>

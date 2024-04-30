@@ -15,12 +15,12 @@ import Image from 'next/image';
 const Sidebar = () => {
     let [open, Setopen] = useState(true)
     let menulist = [
-        { id: 1, name: 'Home', icon: <RiHome5Line />, route: '/' },
-        { id: 2, name: 'Task', icon: <FaTasks />, route: '/' },
-        { id: 3, name: 'Analytics', icon: <SiGoogleanalytics />, route: '/' },
-        { id: 4, name: 'Projects', icon: <GrProjects />, route: '/' },
-        { id: 5, name: 'Setting', icon: <IoSettingsOutline />, route: '/', space: true },
-        { id: 5, name: 'Team', icon: <BsMicrosoftTeams />, route: '/' }
+        { id: 1, name: 'Home', icon: <RiHome5Line />, route: '/dashboard' },
+        { id: 2, name: 'Task', icon: <FaTasks />, route: '/dashboard/task' },
+        { id: 3, name: 'Analytics', icon: <SiGoogleanalytics />, route: '/dashboard' },
+        { id: 4, name: 'Projects', icon: <GrProjects />, route: '/dashboard/task' },
+        { id: 5, name: 'Setting', icon: <IoSettingsOutline />, route: '/dashboard/team', space: true },
+        { id: 5, name: 'Team', icon: <BsMicrosoftTeams />, route: '/dashboard/team' }
 
     ]
     return (

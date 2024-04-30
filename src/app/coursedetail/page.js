@@ -3,7 +3,7 @@ import VideoPlayer from '../compo/VideoPlayer';
 
 const CourseDetailspage = () => {
     return (
-        <div>
+        <div className=' mx-auto justify-center '>
           <VideoPlayer></VideoPlayer>
         </div>
     );

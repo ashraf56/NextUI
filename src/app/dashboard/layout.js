@@ -5,7 +5,7 @@ const DashboardmainLayout = ({children}) => {
     return (
         <div className='h-screen flex gap-2 bg-[#161a1d]'>
             <Sidebar></Sidebar>
-            <div>
+            <div className='w-full '>
                 {children}
             </div>
         </div>

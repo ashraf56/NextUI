@@ -1,9 +1,11 @@
 import React from 'react';
+import VideoPlayer from '../compo/VideoPlayer';
 
 const page = () => {
     return (
-        <div>
-            <h1>Dashboard Content here</h1>
+        <div className='w-full '>
+            <h1 className='text-center font-bold '>Products Data Table</h1>
+            <VideoPlayer></VideoPlayer>
         </div>
     );
 };

@@ -5,9 +5,9 @@ import getdummyData from '@/utlis/getdummyData';
 
 const VideoPlayer = async () => {
 let {products} = await getdummyData()
-let coldata= ['name', 'price', 'cate']
+let coldata= ['title', 'price', 'category','discountPercentage']
     return (
-        <div className='mt-1'>
+        <div className='mt-1  '>
             <Retable columns={coldata} users={products}></Retable>
         </div>
     );
