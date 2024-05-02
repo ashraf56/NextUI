@@ -7,7 +7,7 @@ const Navbars = () => {
              <Navbar>
       <NavbarBrand>
         
-        <p className="font-bold text-inherit">ACME</p>
+        <p className="font-bold text-inherit">TACME</p>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
@@ -23,6 +23,11 @@ const Navbars = () => {
         <NavbarItem>
           <Link color="foreground" href="/coursedetail">
           Course Detail
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="/userprofile">
+          User profile
           </Link>
         </NavbarItem>
       </NavbarContent>

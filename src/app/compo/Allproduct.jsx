@@ -5,7 +5,6 @@ import Retable from './Retable';
 
 const Allproduct = async() => {
     const {products} = await getallProducts()
-    console.log(products);
   
     return (
         <div className=''>
